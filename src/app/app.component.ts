@@ -60,7 +60,7 @@ export class AppComponent {
     this.treeControl = new FlatTreeControl<FileFlatNode>(this._getLevel, this._isExpandable);
     this.dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
 
-    console.log(this.treeControl, 555)
+    console.log(this.treeControl);
 
     database.dataChange.subscribe(data => {
       this.dataSource.data = data;
